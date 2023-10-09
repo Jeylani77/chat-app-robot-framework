@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231008 22:45:50.440" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231009 02:09:24.440" rpa="false" schemaversion="4">
 <suite id="s1" name="Login" source="C:\Users\LENOVO\PycharmProjects\androidProject\Tests\Login.robot">
-<test id="s1-t1" name="Login" line="23">
-<kw name="Open Chat21 APP On Virtual Device" library="android-res">
+<test id="s1-t1" name="Login" line="6">
+<kw name="Open Chat21 APP On Device 1" library="android-res">
 <kw name="Open Chat21 App" library="android-res">
 <arg>${APPIUM_PORT_DEVICE1}</arg>
-<arg>${UDID_EMULATOR1}</arg>
+<arg>${UDID_DEVICE1}</arg>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:${APPIUM_PORT}</arg>
 <arg>platformName=Android</arg>
@@ -20,7 +20,7 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20231008 22:45:50.660" endtime="20231008 22:45:59.471"/>
+<status status="PASS" starttime="20231009 02:09:24.765" endtime="20231009 02:09:35.065"/>
 </kw>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${Alert}</var>
@@ -30,12 +30,12 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <kw name="Page Should Contain Element" library="AppiumLibrary">
 <arg>${ACCEPT_STORAGE_BUTTON}</arg>
 <doc>Verifies that current page contains `locator` element.</doc>
-<msg timestamp="20231008 22:45:59.982" level="INFO">Current page contains element 'id=com.android.permissioncontroller:id/continue_button'.</msg>
-<msg timestamp="20231008 22:45:59.982" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
-<status status="PASS" starttime="20231008 22:45:59.471" endtime="20231008 22:45:59.982"/>
+<msg timestamp="20231009 02:09:35.593" level="INFO">Current page contains element 'id=com.android.permissioncontroller:id/continue_button'.</msg>
+<msg timestamp="20231009 02:09:35.593" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
+<status status="PASS" starttime="20231009 02:09:35.067" endtime="20231009 02:09:35.593"/>
 </kw>
-<msg timestamp="20231008 22:45:59.982" level="INFO">${Alert} = True</msg>
-<status status="PASS" starttime="20231008 22:45:59.471" endtime="20231008 22:45:59.982"/>
+<msg timestamp="20231009 02:09:35.594" level="INFO">${Alert} = True</msg>
+<status status="PASS" starttime="20231009 02:09:35.065" endtime="20231009 02:09:35.594"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${Alert}' == 'True'</arg>
@@ -45,37 +45,37 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${ACCEPT_STORAGE_BUTTON}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231008 22:46:00.011" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
-<status status="PASS" starttime="20231008 22:45:59.982" endtime="20231008 22:46:00.011"/>
+<msg timestamp="20231009 02:09:35.636" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
+<status status="PASS" starttime="20231009 02:09:35.594" endtime="20231009 02:09:35.636"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${ACCEPT_STORAGE_BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231008 22:46:00.013" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/continue_button'.</msg>
-<msg timestamp="20231008 22:46:00.109" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
-<status status="PASS" starttime="20231008 22:46:00.011" endtime="20231008 22:46:00.109"/>
+<msg timestamp="20231009 02:09:35.639" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/continue_button'.</msg>
+<msg timestamp="20231009 02:09:35.748" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
+<status status="PASS" starttime="20231009 02:09:35.637" endtime="20231009 02:09:35.748"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${ACCEPT_OLD_VERSION_POPUP}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231008 22:46:01.306" level="INFO">criteria is android:id/button1
+<msg timestamp="20231009 02:09:36.875" level="INFO">criteria is android:id/button1
 criteria is android:id/button1</msg>
-<status status="PASS" starttime="20231008 22:46:00.109" endtime="20231008 22:46:01.306"/>
+<status status="PASS" starttime="20231009 02:09:35.748" endtime="20231009 02:09:36.875"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${ACCEPT_OLD_VERSION_POPUP}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231008 22:46:01.308" level="INFO">Clicking element 'id=android:id/button1'.</msg>
-<msg timestamp="20231008 22:46:01.944" level="INFO">criteria is android:id/button1</msg>
-<status status="PASS" starttime="20231008 22:46:01.306" endtime="20231008 22:46:01.944"/>
+<msg timestamp="20231009 02:09:36.877" level="INFO">Clicking element 'id=android:id/button1'.</msg>
+<msg timestamp="20231009 02:09:37.076" level="INFO">criteria is android:id/button1</msg>
+<status status="PASS" starttime="20231009 02:09:36.876" endtime="20231009 02:09:37.076"/>
 </kw>
-<status status="PASS" starttime="20231008 22:45:59.982" endtime="20231008 22:46:01.944"/>
+<status status="PASS" starttime="20231009 02:09:35.594" endtime="20231009 02:09:37.076"/>
 </kw>
-<status status="PASS" starttime="20231008 22:45:59.982" endtime="20231008 22:46:01.944"/>
+<status status="PASS" starttime="20231009 02:09:35.594" endtime="20231009 02:09:37.076"/>
 </kw>
-<status status="PASS" starttime="20231008 22:45:50.659" endtime="20231008 22:46:01.944"/>
+<status status="PASS" starttime="20231009 02:09:24.764" endtime="20231009 02:09:37.076"/>
 </kw>
-<status status="PASS" starttime="20231008 22:45:50.659" endtime="20231008 22:46:01.944"/>
+<status status="PASS" starttime="20231009 02:09:24.764" endtime="20231009 02:09:37.077"/>
 </kw>
 <kw name="Login User" library="android-res">
 <arg>${USER_DETAILS}[email]</arg>
@@ -85,59 +85,59 @@ criteria is android:id/button1</msg>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${EMAIL_INPUT}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231008 22:46:02.513" level="INFO">criteria is chat21.android.demo:id/email</msg>
-<status status="PASS" starttime="20231008 22:46:01.945" endtime="20231008 22:46:02.513"/>
+<msg timestamp="20231009 02:09:38.370" level="INFO">criteria is chat21.android.demo:id/email</msg>
+<status status="PASS" starttime="20231009 02:09:37.077" endtime="20231009 02:09:38.370"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${EMAIL_INPUT}</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20231008 22:46:02.515" level="INFO">Typing text 'rootnjaay@gmail.com' into text field 'id=chat21.android.demo:id/email'</msg>
-<msg timestamp="20231008 22:46:02.586" level="INFO">criteria is chat21.android.demo:id/email</msg>
-<status status="PASS" starttime="20231008 22:46:02.513" endtime="20231008 22:46:02.586"/>
+<msg timestamp="20231009 02:09:38.372" level="INFO">Typing text 'rootnjaay@gmail.com' into text field 'id=chat21.android.demo:id/email'</msg>
+<msg timestamp="20231009 02:09:38.896" level="INFO">criteria is chat21.android.demo:id/email</msg>
+<status status="PASS" starttime="20231009 02:09:38.370" endtime="20231009 02:09:38.896"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:01.945" endtime="20231008 22:46:02.586"/>
+<status status="PASS" starttime="20231009 02:09:37.077" endtime="20231009 02:09:38.897"/>
 </kw>
 <kw name="Input User Password" library="android-res">
 <arg>${PASS}</arg>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${PASSWORD_INPUT}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231008 22:46:03.110" level="INFO">criteria is chat21.android.demo:id/password</msg>
-<status status="PASS" starttime="20231008 22:46:02.586" endtime="20231008 22:46:03.110"/>
+<msg timestamp="20231009 02:09:39.478" level="INFO">criteria is chat21.android.demo:id/password</msg>
+<status status="PASS" starttime="20231009 02:09:38.898" endtime="20231009 02:09:39.478"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${PASSWORD_INPUT}</arg>
 <arg>${PASS}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20231008 22:46:03.111" level="INFO">Typing text 'passer1234' into text field 'id=chat21.android.demo:id/password'</msg>
-<msg timestamp="20231008 22:46:03.160" level="INFO">criteria is chat21.android.demo:id/password</msg>
-<status status="PASS" starttime="20231008 22:46:03.110" endtime="20231008 22:46:03.160"/>
+<msg timestamp="20231009 02:09:39.486" level="INFO">Typing text 'passer1234' into text field 'id=chat21.android.demo:id/password'</msg>
+<msg timestamp="20231009 02:09:39.633" level="INFO">criteria is chat21.android.demo:id/password</msg>
+<status status="PASS" starttime="20231009 02:09:39.478" endtime="20231009 02:09:39.635"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:02.586" endtime="20231008 22:46:03.160"/>
+<status status="PASS" starttime="20231009 02:09:38.897" endtime="20231009 02:09:39.635"/>
 </kw>
 <kw name="Click Login Button" library="android-res">
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231008 22:46:03.679" level="INFO">criteria is chat21.android.demo:id/login</msg>
-<status status="PASS" starttime="20231008 22:46:03.161" endtime="20231008 22:46:03.679"/>
+<msg timestamp="20231009 02:09:40.179" level="INFO">criteria is chat21.android.demo:id/login</msg>
+<status status="PASS" starttime="20231009 02:09:39.635" endtime="20231009 02:09:40.180"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231008 22:46:03.682" level="INFO">Clicking element 'id=chat21.android.demo:id/login'.</msg>
-<msg timestamp="20231008 22:46:03.757" level="INFO">criteria is chat21.android.demo:id/login</msg>
-<status status="PASS" starttime="20231008 22:46:03.679" endtime="20231008 22:46:03.757"/>
+<msg timestamp="20231009 02:09:40.187" level="INFO">Clicking element 'id=chat21.android.demo:id/login'.</msg>
+<msg timestamp="20231009 02:09:40.407" level="INFO">criteria is chat21.android.demo:id/login</msg>
+<status status="PASS" starttime="20231009 02:09:40.180" endtime="20231009 02:09:40.407"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:03.160" endtime="20231008 22:46:03.757"/>
+<status status="PASS" starttime="20231009 02:09:39.635" endtime="20231009 02:09:40.407"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:01.944" endtime="20231008 22:46:03.757"/>
+<status status="PASS" starttime="20231009 02:09:37.077" endtime="20231009 02:09:40.407"/>
 </kw>
-<kw name="Open Chat21 APP On Physical Device" library="android-res">
+<kw name="Open Chat21 APP On Device 2" library="android-res">
 <kw name="Open Chat21 App" library="android-res">
 <arg>${APPIUM_PORT_DEVICE2}</arg>
-<arg>${UDID_EMULATOR2}</arg>
+<arg>${UDID_DEVICE2}</arg>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:${APPIUM_PORT}</arg>
 <arg>platformName=Android</arg>
@@ -152,7 +152,7 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20231008 22:46:03.758" endtime="20231008 22:46:12.904"/>
+<status status="PASS" starttime="20231009 02:09:40.409" endtime="20231009 02:09:50.380"/>
 </kw>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${Alert}</var>
@@ -162,12 +162,12 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <kw name="Page Should Contain Element" library="AppiumLibrary">
 <arg>${ACCEPT_STORAGE_BUTTON}</arg>
 <doc>Verifies that current page contains `locator` element.</doc>
-<msg timestamp="20231008 22:46:13.472" level="INFO">Current page contains element 'id=com.android.permissioncontroller:id/continue_button'.</msg>
-<msg timestamp="20231008 22:46:13.472" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
-<status status="PASS" starttime="20231008 22:46:12.904" endtime="20231008 22:46:13.472"/>
+<msg timestamp="20231009 02:09:50.889" level="INFO">Current page contains element 'id=com.android.permissioncontroller:id/continue_button'.</msg>
+<msg timestamp="20231009 02:09:50.889" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
+<status status="PASS" starttime="20231009 02:09:50.380" endtime="20231009 02:09:50.889"/>
 </kw>
-<msg timestamp="20231008 22:46:13.472" level="INFO">${Alert} = True</msg>
-<status status="PASS" starttime="20231008 22:46:12.904" endtime="20231008 22:46:13.472"/>
+<msg timestamp="20231009 02:09:50.889" level="INFO">${Alert} = True</msg>
+<status status="PASS" starttime="20231009 02:09:50.380" endtime="20231009 02:09:50.889"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${Alert}' == 'True'</arg>
@@ -177,98 +177,245 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${ACCEPT_STORAGE_BUTTON}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231008 22:46:13.518" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
-<status status="PASS" starttime="20231008 22:46:13.473" endtime="20231008 22:46:13.518"/>
+<msg timestamp="20231009 02:09:50.942" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
+<status status="PASS" starttime="20231009 02:09:50.890" endtime="20231009 02:09:50.942"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${ACCEPT_STORAGE_BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231008 22:46:13.521" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/continue_button'.</msg>
-<msg timestamp="20231008 22:46:13.637" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
-<status status="PASS" starttime="20231008 22:46:13.518" endtime="20231008 22:46:13.637"/>
+<msg timestamp="20231009 02:09:50.946" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/continue_button'.</msg>
+<msg timestamp="20231009 02:09:51.053" level="INFO">criteria is com.android.permissioncontroller:id/continue_button</msg>
+<status status="PASS" starttime="20231009 02:09:50.943" endtime="20231009 02:09:51.053"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${ACCEPT_OLD_VERSION_POPUP}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231008 22:46:14.436" level="INFO">criteria is android:id/button1
-criteria is android:id/button1</msg>
-<status status="PASS" starttime="20231008 22:46:13.638" endtime="20231008 22:46:14.436"/>
+<msg timestamp="20231009 02:09:52.207" level="INFO">criteria is android:id/button1</msg>
+<status status="PASS" starttime="20231009 02:09:51.053" endtime="20231009 02:09:52.207"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${ACCEPT_OLD_VERSION_POPUP}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231008 22:46:14.438" level="INFO">Clicking element 'id=android:id/button1'.</msg>
-<msg timestamp="20231008 22:46:14.740" level="INFO">criteria is android:id/button1</msg>
-<status status="PASS" starttime="20231008 22:46:14.436" endtime="20231008 22:46:14.740"/>
+<msg timestamp="20231009 02:09:52.212" level="INFO">Clicking element 'id=android:id/button1'.</msg>
+<msg timestamp="20231009 02:09:52.394" level="INFO">criteria is android:id/button1</msg>
+<status status="PASS" starttime="20231009 02:09:52.208" endtime="20231009 02:09:52.394"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:13.473" endtime="20231008 22:46:14.740"/>
+<status status="PASS" starttime="20231009 02:09:50.889" endtime="20231009 02:09:52.394"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:13.473" endtime="20231008 22:46:14.740"/>
+<status status="PASS" starttime="20231009 02:09:50.889" endtime="20231009 02:09:52.395"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:03.758" endtime="20231008 22:46:14.740"/>
+<status status="PASS" starttime="20231009 02:09:40.408" endtime="20231009 02:09:52.395"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:03.758" endtime="20231008 22:46:14.740"/>
+<status status="PASS" starttime="20231009 02:09:40.408" endtime="20231009 02:09:52.395"/>
 </kw>
 <kw name="Login User" library="android-res">
-<arg>${USER_DETAILS}[email]</arg>
-<arg>${USER_DETAILS}[password]</arg>
+<arg>${USER_DETAILS2}[email]</arg>
+<arg>${USER_DETAILS2}[password]</arg>
 <kw name="Input User Email" library="android-res">
 <arg>${EMAIL}</arg>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${EMAIL_INPUT}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231008 22:46:16.163" level="INFO">criteria is chat21.android.demo:id/email</msg>
-<status status="PASS" starttime="20231008 22:46:14.743" endtime="20231008 22:46:16.163"/>
+<msg timestamp="20231009 02:09:53.647" level="INFO">criteria is chat21.android.demo:id/email</msg>
+<status status="PASS" starttime="20231009 02:09:52.396" endtime="20231009 02:09:53.647"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${EMAIL_INPUT}</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20231008 22:46:16.166" level="INFO">Typing text 'rootnjaay@gmail.com' into text field 'id=chat21.android.demo:id/email'</msg>
-<msg timestamp="20231008 22:46:16.258" level="INFO">criteria is chat21.android.demo:id/email</msg>
-<status status="PASS" starttime="20231008 22:46:16.163" endtime="20231008 22:46:16.259"/>
+<msg timestamp="20231009 02:09:53.650" level="INFO">Typing text 'almouslim77@yahoo.fr' into text field 'id=chat21.android.demo:id/email'</msg>
+<msg timestamp="20231009 02:09:53.739" level="INFO">criteria is chat21.android.demo:id/email</msg>
+<status status="PASS" starttime="20231009 02:09:53.647" endtime="20231009 02:09:53.739"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:14.743" endtime="20231008 22:46:16.259"/>
+<status status="PASS" starttime="20231009 02:09:52.396" endtime="20231009 02:09:53.739"/>
 </kw>
 <kw name="Input User Password" library="android-res">
 <arg>${PASS}</arg>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${PASSWORD_INPUT}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231008 22:46:16.769" level="INFO">criteria is chat21.android.demo:id/password</msg>
-<status status="PASS" starttime="20231008 22:46:16.259" endtime="20231008 22:46:16.770"/>
+<msg timestamp="20231009 02:09:54.288" level="INFO">criteria is chat21.android.demo:id/password</msg>
+<status status="PASS" starttime="20231009 02:09:53.740" endtime="20231009 02:09:54.288"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${PASSWORD_INPUT}</arg>
 <arg>${PASS}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20231008 22:46:16.773" level="INFO">Typing text 'passer1234' into text field 'id=chat21.android.demo:id/password'</msg>
-<msg timestamp="20231008 22:46:16.838" level="INFO">criteria is chat21.android.demo:id/password</msg>
-<status status="PASS" starttime="20231008 22:46:16.770" endtime="20231008 22:46:16.838"/>
+<msg timestamp="20231009 02:09:54.292" level="INFO">Typing text 'passer1234' into text field 'id=chat21.android.demo:id/password'</msg>
+<msg timestamp="20231009 02:09:54.366" level="INFO">criteria is chat21.android.demo:id/password</msg>
+<status status="PASS" starttime="20231009 02:09:54.289" endtime="20231009 02:09:54.366"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:16.259" endtime="20231008 22:46:16.838"/>
+<status status="PASS" starttime="20231009 02:09:53.740" endtime="20231009 02:09:54.366"/>
 </kw>
 <kw name="Click Login Button" library="android-res">
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231008 22:46:17.344" level="INFO">criteria is chat21.android.demo:id/login</msg>
-<status status="PASS" starttime="20231008 22:46:16.839" endtime="20231008 22:46:17.346"/>
+<msg timestamp="20231009 02:09:54.876" level="INFO">criteria is chat21.android.demo:id/login</msg>
+<status status="PASS" starttime="20231009 02:09:54.368" endtime="20231009 02:09:54.876"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231008 22:46:17.348" level="INFO">Clicking element 'id=chat21.android.demo:id/login'.</msg>
-<msg timestamp="20231008 22:46:17.420" level="INFO">criteria is chat21.android.demo:id/login</msg>
-<status status="PASS" starttime="20231008 22:46:17.346" endtime="20231008 22:46:17.420"/>
+<msg timestamp="20231009 02:09:54.878" level="INFO">Clicking element 'id=chat21.android.demo:id/login'.</msg>
+<msg timestamp="20231009 02:09:54.962" level="INFO">criteria is chat21.android.demo:id/login</msg>
+<status status="PASS" starttime="20231009 02:09:54.876" endtime="20231009 02:09:54.962"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:16.838" endtime="20231008 22:46:17.420"/>
+<status status="PASS" starttime="20231009 02:09:54.366" endtime="20231009 02:09:54.962"/>
 </kw>
-<status status="PASS" starttime="20231008 22:46:14.742" endtime="20231008 22:46:17.420"/>
+<status status="PASS" starttime="20231009 02:09:52.395" endtime="20231009 02:09:54.962"/>
 </kw>
-<status status="PASS" starttime="20231008 22:45:50.659" endtime="20231008 22:46:17.421"/>
+<kw name="Switch Application" library="AppiumLibrary">
+<arg>1</arg>
+<doc>Switches the active application by index or alias.</doc>
+<status status="PASS" starttime="20231009 02:09:54.962" endtime="20231009 02:09:54.963"/>
+</kw>
+<kw name="Create New Conversation" library="android-res">
+<arg>Null</arg>
+<kw name="Go To Chat Tab" library="android-res">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${CHAT_TAB}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231009 02:09:54.967" level="INFO">Clicking element '//android.widget.TextView[@text='CHAT']'.</msg>
+<msg timestamp="20231009 02:09:56.158" level="INFO">xpath criteria: //android.widget.TextView[@text='CHAT']</msg>
+<status status="PASS" starttime="20231009 02:09:54.964" endtime="20231009 02:09:56.159"/>
+</kw>
+<status status="PASS" starttime="20231009 02:09:54.963" endtime="20231009 02:09:56.159"/>
+</kw>
+<kw name="Click New Conversation Button" library="android-res">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${NEW_CONVERSATION_BUTTON}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231009 02:09:57.074" level="INFO">criteria is chat21.android.demo:id/button_new_conversation
+criteria is chat21.android.demo:id/button_new_conversation</msg>
+<status status="PASS" starttime="20231009 02:09:56.159" endtime="20231009 02:09:57.074"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${NEW_CONVERSATION_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231009 02:09:57.078" level="INFO">Clicking element 'id=chat21.android.demo:id/button_new_conversation'.</msg>
+<msg timestamp="20231009 02:09:57.184" level="INFO">criteria is chat21.android.demo:id/button_new_conversation</msg>
+<status status="PASS" starttime="20231009 02:09:57.074" endtime="20231009 02:09:57.185"/>
+</kw>
+<status status="PASS" starttime="20231009 02:09:56.159" endtime="20231009 02:09:57.185"/>
+</kw>
+<kw name="Click Search User" library="android-res">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${SEARCH_CONTACT_BUTTON}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231009 02:09:58.748" level="INFO">criteria is chat21.android.demo:id/action_search
+criteria is chat21.android.demo:id/action_search</msg>
+<status status="PASS" starttime="20231009 02:09:57.185" endtime="20231009 02:09:58.748"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SEARCH_CONTACT_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231009 02:09:58.751" level="INFO">Clicking element 'id=chat21.android.demo:id/action_search'.</msg>
+<msg timestamp="20231009 02:09:58.875" level="INFO">criteria is chat21.android.demo:id/action_search</msg>
+<status status="PASS" starttime="20231009 02:09:58.749" endtime="20231009 02:09:58.876"/>
+</kw>
+<status status="PASS" starttime="20231009 02:09:57.185" endtime="20231009 02:09:58.876"/>
+</kw>
+<kw name="Input Searching User" library="android-res">
+<arg>${USERNAME_SEARCH}</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${SEARCH_CONTACT_INPUT}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231009 02:09:59.716" level="INFO">criteria is chat21.android.demo:id/search_src_text</msg>
+<status status="PASS" starttime="20231009 02:09:58.876" endtime="20231009 02:09:59.716"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SEARCH_CONTACT_INPUT}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231009 02:09:59.720" level="INFO">Clicking element 'id=chat21.android.demo:id/search_src_text'.</msg>
+<msg timestamp="20231009 02:09:59.853" level="INFO">criteria is chat21.android.demo:id/search_src_text</msg>
+<status status="PASS" starttime="20231009 02:09:59.716" endtime="20231009 02:09:59.853"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${SEARCH_CONTACT_INPUT}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231009 02:09:59.858" level="INFO">Typing text 'Null' into text field 'id=chat21.android.demo:id/search_src_text'</msg>
+<msg timestamp="20231009 02:10:01.067" level="INFO">criteria is chat21.android.demo:id/search_src_text</msg>
+<status status="PASS" starttime="20231009 02:09:59.854" endtime="20231009 02:10:01.067"/>
+</kw>
+<status status="PASS" starttime="20231009 02:09:58.876" endtime="20231009 02:10:01.067"/>
+</kw>
+<kw name="Click User" library="android-res">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>//android.widget.TextView[contains(@resource-id,'fullname') and @text='null null']</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231009 02:10:02.190" level="INFO">xpath criteria: //android.widget.TextView[contains(@resource-id,'fullname') and @text='null null']</msg>
+<status status="PASS" starttime="20231009 02:10:01.067" endtime="20231009 02:10:02.190"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.TextView[contains(@resource-id,'fullname') and @text='null null']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231009 02:10:02.192" level="INFO">Clicking element '//android.widget.TextView[contains(@resource-id,'fullname') and @text='null null']'.</msg>
+<msg timestamp="20231009 02:10:02.374" level="INFO">xpath criteria: //android.widget.TextView[contains(@resource-id,'fullname') and @text='null null']</msg>
+<status status="PASS" starttime="20231009 02:10:02.190" endtime="20231009 02:10:02.374"/>
+</kw>
+<status status="PASS" starttime="20231009 02:10:01.067" endtime="20231009 02:10:02.374"/>
+</kw>
+<status status="PASS" starttime="20231009 02:09:54.963" endtime="20231009 02:10:02.374"/>
+</kw>
+<kw name="Send Message" library="android-res">
+<arg>${THE_MESSAGE}</arg>
+<kw name="Tap Message" library="android-res">
+<arg>${MESSAGE}</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${USERNAME_TOOLBAR}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231009 02:10:03.754" level="INFO">criteria is chat21.android.demo:id/toolbar_title
+criteria is chat21.android.demo:id/toolbar_title</msg>
+<status status="PASS" starttime="20231009 02:10:02.375" endtime="20231009 02:10:03.754"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${SEND_MESSAGE_INPUT}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231009 02:10:03.779" level="INFO">criteria is chat21.android.demo:id/main_activity_chat_bottom_message_edittext</msg>
+<status status="PASS" starttime="20231009 02:10:03.754" endtime="20231009 02:10:03.779"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${SEND_MESSAGE_INPUT}</arg>
+<arg>${MESSAGE}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231009 02:10:03.784" level="INFO">Typing text 'Hello' into text field 'id=chat21.android.demo:id/main_activity_chat_bottom_message_edittext'</msg>
+<msg timestamp="20231009 02:10:03.881" level="INFO">criteria is chat21.android.demo:id/main_activity_chat_bottom_message_edittext</msg>
+<status status="PASS" starttime="20231009 02:10:03.780" endtime="20231009 02:10:03.881"/>
+</kw>
+<status status="PASS" starttime="20231009 02:10:02.375" endtime="20231009 02:10:03.881"/>
+</kw>
+<kw name="Click Send Message Button" library="android-res">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${SEND_MESSAGE_BUTTON}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231009 02:10:04.503" level="INFO">criteria is chat21.android.demo:id/main_activity_send</msg>
+<status status="PASS" starttime="20231009 02:10:03.881" endtime="20231009 02:10:04.503"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SEND_MESSAGE_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231009 02:10:04.505" level="INFO">Clicking element 'id=chat21.android.demo:id/main_activity_send'.</msg>
+<msg timestamp="20231009 02:10:04.638" level="INFO">criteria is chat21.android.demo:id/main_activity_send</msg>
+<status status="PASS" starttime="20231009 02:10:04.503" endtime="20231009 02:10:04.638"/>
+</kw>
+<status status="PASS" starttime="20231009 02:10:03.881" endtime="20231009 02:10:04.638"/>
+</kw>
+<kw name="Verify Text Message Is Sent" library="android-res">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${MESSAGE_TEXT_SENT}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231009 02:10:04.951" level="INFO">criteria is chat21.android.demo:id/message</msg>
+<status status="PASS" starttime="20231009 02:10:04.639" endtime="20231009 02:10:04.951"/>
+</kw>
+<status status="PASS" starttime="20231009 02:10:04.638" endtime="20231009 02:10:04.951"/>
+</kw>
+<status status="PASS" starttime="20231009 02:10:02.374" endtime="20231009 02:10:04.951"/>
+</kw>
+<status status="PASS" starttime="20231009 02:09:24.764" endtime="20231009 02:10:04.951"/>
 </test>
-<status status="PASS" starttime="20231008 22:45:50.441" endtime="20231008 22:46:17.422"/>
+<status status="PASS" starttime="20231009 02:09:24.442" endtime="20231009 02:10:04.952"/>
 </suite>
 <statistics>
 <total>
